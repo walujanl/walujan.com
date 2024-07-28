@@ -1,0 +1,237 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+/* Global */
+html {
+  font-family: "Inter", system-ui, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply antialiased dark:bg-darkPrimary;
+}
+
+/* Button */
+
+.main-color-button {
+  @apply px-3 py-2 text-base font-medium rounded-md bg-favouriteColor text-textLightContent hover:bg-lightButtonHoverColor hover:text-textDarkContent dark:bg-darkSecondary dark:text-textDarkContent dark:hover:bg-darkButtonHoverColor dark:hover:text-textLightContent;
+}
+
+/* Home */
+
+.hero-title {
+  @apply mt-4 text-3xl font-semibold text-center text-favouriteTextColor lg:text-4xl dark:text-textDarkPrimary lg:text-left;
+}
+
+.hero-subtitle {
+  @apply block mb-5 text-lg font-medium text-center text-favouriteTextColorSecondary dark:text-textDarkSecondary lg:text-left;
+}
+
+.hero-desc {
+  @apply mb-9 leading-relaxed text-sm text-textLightContent dark:text-textDarkContent;
+}
+
+.home-work-contact-title {
+  @apply mb-3 text-lg font-bold uppercase text-favouriteTextColor dark:text-textDarkPrimary;
+}
+
+.home-work-contact-subtitle {
+  @apply max-w-md mb-5 text-2xl font-semibold lg:text-3xl text-favouriteTextColorSecondary dark:text-textDarkSecondary;
+}
+
+.home-work-contact-desc {
+  @apply text-base leading-relaxed text-sm text-textLightContent dark:text-textDarkContent;
+}
+
+.home-link-icon {
+  @apply flex items-center justify-center mr-3 border rounded-full h-9 w-9 text-textLightContent hover:bg-darkPrimary hover:text-white border-darkPrimary hover:border-black dark:border-slate-300 dark:hover:border-white dark:hover:bg-white dark:text-textDarkContent dark:hover:text-textLightContent;
+}
+
+/* End Home */
+
+/* Article */
+
+article .meta {
+  @apply text-center;
+}
+
+article h1 {
+  @apply my-4 text-3xl font-semibold text-favouriteTextColor dark:text-textDarkPrimary lg:text-4xl;
+}
+
+article h1 > a {
+  @apply my-4 text-3xl font-semibold text-favouriteTextColor dark:text-textDarkPrimary lg:text-4xl;
+}
+
+article h2 {
+  @apply my-4 text-2xl font-semibold text-textLightContent dark:text-textDarkSecondary;
+}
+
+article h2 > a {
+  @apply my-4 text-2xl font-semibold text-textLightContent dark:text-textDarkSecondary;
+}
+
+article p {
+  @apply my-4 text-sm leading-loose text-textLightContent dark:text-textDarkContent;
+}
+
+article a {
+  @apply my-4 text-sm leading-loose hover:underline text-textLightContent dark:text-textDarkContent;
+}
+
+article img {
+  @apply my-4;
+}
+
+article li {
+  @apply mb-2 ml-8 text-sm list-disc text-textLightContent dark:text-textDarkContent;
+}
+
+/* End Article */
+
+/* List */
+
+.list-header h1 {
+  @apply mb-4 text-3xl font-semibold text-favouriteTextColor dark:text-textDarkPrimary lg:text-4xl;
+}
+
+.list-header h2 {
+  @apply my-4 text-2xl font-semibold text-textLightContent dark:text-textDarkSecondary;
+}
+
+.list-header p {
+  @apply mb-4 leading-relaxed text-textLightContent dark:text-textDarkContent;
+}
+
+.list h1 {
+  @apply my-4 font-semibold text-favouriteTextColor dark:text-textDarkPrimary lg:text-4xl;
+}
+
+.list h2 {
+  @apply my-4 text-2xl font-semibold text-textLightContent dark:text-textDarkSecondary;
+}
+
+.list h3 {
+  @apply my-4 text-xl font-semibold text-textLightContent dark:text-textDarkSecondary;
+}
+
+.list p {
+  @apply text-sm leading-relaxed text-textLightContent dark:text-textDarkContent;
+}
+
+.list li {
+  @apply mb-2 ml-8 text-sm list-disc text-textLightContent dark:text-textDarkContent;
+}
+
+/* End List */
+
+/* Table */
+
+.table-item {
+  @apply px-4 py-2 text-sm font-semibold border-r text-textLightContent dark:text-textDarkContent;
+}
+
+.table-item-second {
+  @apply px-4 py-2 text-sm border-r text-textLightContent dark:text-textDarkContent;
+}
+
+th {
+  @apply px-6 py-4 font-medium text-sm text-textLightContent dark:text-textDarkContent;
+}
+
+td > a {
+  @apply px-4 py-2 text-sm text-textLightContent hover:text-favouriteTextColor hover:underline dark:text-textDarkContent dark:hover:text-white;
+}
+
+/* End Table */
+
+/* Navbar Section */
+
+.nav-header {
+  @apply absolute top-0 left-0 z-10 flex items-center w-full bg-white dark:bg-darkPrimary;
+}
+
+.navbar-mobile-menu {
+  @apply absolute py-5 shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:max-w-full lg:shadow-none lg:rounded-none;
+}
+
+.fixed-nav {
+  @apply shadow-md;
+  position: fixed;
+}
+
+.nav-menu-list-current {
+  @apply flex py-2 mx-6 lg:mx-3 text-base text-sm font-bold text-black group-hover:text-favouriteTextColor dark:group-hover:text-textDarkPrimary dark:text-textDarkSecondary;
+}
+
+.nav-menu-list {
+  @apply flex py-2 mx-6 lg:mx-3 text-base text-sm text-black group-hover:text-favouriteTextColor dark:group-hover:text-textDarkPrimary dark:text-textDarkSecondary;
+}
+
+/* End Navbar Section */
+
+/* Footer Section */
+
+.footer-social-link {
+  @apply flex items-center justify-center mr-3 border rounded-full h-9 w-9 text-textLightContent hover:bg-darkPrimary hover:text-white border-darkPrimary hover:border-black dark:border-slate-300 dark:hover:border-white dark:hover:bg-white dark:text-textDarkContent dark:hover:text-textLightContent;
+}
+
+.footer-menu-list {
+  @apply inline-block mb-3 text-base text-sm text-textLightContent dark:text-textDarkContent hover:underline;
+}
+
+/* End Footer Section */
+
+/* Other */
+
+.totopbutton {
+  @apply fixed p-2 text-white bg-toTopButtonColor rounded-full shadow-md bottom-5 right-5 hover:bg-darkPrimary hover:shadow-lg focus:bg-darkSecondary focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg dark:hover:bg-white dark:hover:text-black;
+}
+
+.content-button {
+  @apply px-3 py-2 text-base font-medium rounded-md bg-favouriteColor text-textLightContent hover:bg-lightButtonHoverColor hover:text-textDarkContent dark:bg-darkSecondary dark:text-textDarkContent dark:hover:bg-darkButtonHoverColor dark:hover:text-textLightContent;
+}
+
+.dark-mode-button {
+  @apply text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-full text-sm py-2 mx-6 p-2.5;
+}
+
+/* End Other */
+
+/* Posts Section */
+
+.post-category-button {
+  @apply p-2 text-base font-medium capitalize rounded-md  bg-favouriteColor text-textLightContent hover:no-underline hover:bg-lightButtonHoverColor hover:text-textDarkContent dark:bg-darkSecondary dark:text-textDarkContent dark:hover:bg-darkButtonHoverColor dark:hover:text-textLightContent;
+}
+
+/* End Posts Section */
+
+@layer base {
+  @font-face {
+    font-family: "Inter";
+    font-weight: 100, 200, 300, 400, 500, 600, 700, 800, 900;
+    font-display: swap;
+    src: url("/fonts/inter/inter-latin-italic.woff2") format("woff2");
+  }
+}
+
+.list > ul > li {
+  @apply list-disc ml-4 text-sm;
+}
+
+.svg-icon {
+  display: inline-flex;
+  align-self: center;
+}
+
+.svg-icon svg {
+  height: 1em;
+  width: 1em;
+}
+
+.svg-icon.svg-baseline svg {
+  top: 0.25em;
+  position: relative;
+}
