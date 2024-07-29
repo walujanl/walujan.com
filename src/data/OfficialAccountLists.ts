@@ -1,9 +1,21 @@
 export const OfficialAccountLists = [
   {
     platform: "Facebook",
-    username: "leonardwalujan",
+    username: "leonard.walujan",
     type: "Social Media",
-    url: "https://www.facebook.com/leonardwalujan",
+    url: "https://www.facebook.com/leonard.walujan",
+  },
+  {
+    platform: "Instagram",
+    username: "leonard.walujan",
+    type: "Social Media",
+    url: "https://www.instagram.com/leonard.walujan",
+  },
+  {
+    platform: "Threads",
+    username: "leonard.walujan",
+    type: "Social Media",
+    url: "https://www.threads.net/@leonard.walujan",
   },
   {
     platform: "LinkedIn",
