@@ -120,6 +120,20 @@ export const OfficialAccounts = [
         url: "https://www.instagram.com/walnatanael",
       },
       {
+        platform: "Instagram (General)",
+        name: "By Leonard Walujan",
+        username: "byleonardwalujan",
+        type: "Social Media",
+        url: "https://www.instagram.com/byleonardwalujan",
+      },
+      {
+        platform: "Instagram (Multimedia)",
+        name: "Leonard Walujan Media",
+        username: "leonardwalujanmedia",
+        type: "Social Media",
+        url: "https://www.instagram.com/leonardwalujanmedia",
+      },
+      {
         platform: "Threads (External)",
         name: "This is Leonard Walujan",
         username: "thisisleonardwalujan",
@@ -132,6 +146,27 @@ export const OfficialAccounts = [
         username: "walnatanael",
         type: "Social Media",
         url: "https://www.threads.net/@walnatanael",
+      },
+      {
+        platform: "Threads (General)",
+        name: "By Leonard Walujan",
+        username: "byleonardwalujan",
+        type: "Social Media",
+        url: "https://www.threads.net/@byleonardwalujan",
+      },
+      {
+        platform: "Threads (Multimedia)",
+        name: "Leonard Walujan Media",
+        username: "leonardwalujanmedia",
+        type: "Social Media",
+        url: "https://www.threads.net/@leonardwalujanmedia",
+      },
+      {
+        platform: "YouTube (External)",
+        name: "This is Leonard Walujan",
+        username: "thisisleonardwalujan",
+        type: "Social Media",
+        url: "https://www.youtube.com/@thisisleonardwalujan",
       },
       {
         platform: "YouTube (Gaming)",
